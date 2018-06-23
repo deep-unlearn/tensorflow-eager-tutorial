@@ -2,7 +2,7 @@
 """
 INFO: 
 
-Standard way of checking values of variables through graph-execution
+'standard' mod of checking values of variables through graph-execution
 Check next code exasmpe for dynamic debbuging of variables 
 (no need for execution of graphs)
 
@@ -17,7 +17,7 @@ c = tf.matmul(a, b)
 
 print type(a)  # tf.tensor
 print type(b)  # tf.tensor
-print type(c)  # tf.tensor - cannot see new values before graph execution  
+print type(c)  # tf.tensor - cannot check actual values before graph execution  
 
 # Activate line to check tensorflow tensors in detail
 #pdb.set_trace()
