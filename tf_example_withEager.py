@@ -20,18 +20,18 @@ b = tf.constant([[1.0, 1.0], [0.0, 1.0]])
 c = tf.matmul(a, b)
 
 
-print "Values of tensor : ", a  
-print "Type of tensor : ", type(a)  #  EagerTensor type
-print""
-print "Values of tensor : ", b  #
-print "Type of tensor : ", type(b)  #  EagerTensor type
-print ""
-print "Values of tensor : ", c  #
-print "Type of tensor : ", type(c)  #  EagerTensor type
-print''
+print ("Values of tensor \'a\' : ", a)  
+print ("Type of tensor \'a\' : ", type(a))  #  EagerTensor type
+print ("")
+print ("Values of tensor \'b\' : ", b)
+print ("Type of tensor  \'b\' : ", type(b))  #  EagerTensor type
+print ("")
+print ("Values of tensor \'c\' : ", c)
+print ("Type of tensor \'c\' : ", type(c))  #  EagerTensor type
+print ('')
 
 # convert EagerTensor to numpy
-print "New type of matrix \'a\' ", type(np.array(a))  # convert to numpy array
+print ("New type of matrix \'a\' ", type(np.array(a)))  # convert to numpy array
 
 # Enable dubbing for dynamic check of variables
 pdb.set_trace()
